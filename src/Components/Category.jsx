@@ -24,7 +24,7 @@ function Category({ setbtnVisible }) {
       <p className="text-[#4e4236] my-2 font-medium cursor-none text-xl">
         Choose your Subject:
       </p>
-      <ul className="ml-3 gap-6 h-[3vw] w-full grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+      <ul className="ml-3 max-sm:ml-0 gap-6 h-[3vw] w-full grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
         {filterCategory.map((category, idx) => {
           return (
             <li

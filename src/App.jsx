@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./Components/Header";
 import Category from "./Components/Category";
 import QuestionStoreProvider from "./Store/QuestionStoreProvider";
-import DisplayQuestions from "./Components/displayQuestions";
+import QuizContainer from "./Components/QuizContainer";
 function App() {
   const [btnVisible, setbtnVisible] = useState(true);
   return (
@@ -12,7 +12,7 @@ function App() {
         {btnVisible ? (
           <Category setbtnVisible={setbtnVisible} />
         ) : (
-          <DisplayQuestions setbtnVisible={setbtnVisible} />
+          <QuizContainer setbtnVisible={setbtnVisible} />
         )}
       </div>
     </QuestionStoreProvider>
